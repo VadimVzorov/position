@@ -1,0 +1,85 @@
+
+/* 
+
+how to accurately allign everything vertically?
+why background is not working?
+how to psition cat and dog accurately? 
+if i put img in separate <div> why resizing "width" doesn't work?
+if i put 'background-image' - nothing works
+if i put 'background' - starts to work .... why?
+why 'cover' in sublime text is white?
+what is difference between max-width and width?
+*/
+
+nav {
+	height: 60px;
+	width: 100%;
+	background-color: grey;
+	top: 0px;
+	text-align: left;
+	position: fixed;
+}
+
+.logo{
+	position: absolute;
+	width: 50px;
+	margin-right: 60px;
+	margin-left: 60px;
+	border-radius: 100%;
+	border: 1px solid black;
+	margin-top: 5px;
+}
+
+ul{
+	position: absolute;
+	padding-left: 180px;
+}
+
+li {
+	display: inline;
+}
+
+li::after{
+	content:"|";
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+nav a:hover{
+	color:black;
+}
+
+main{
+	padding-top: 200px;
+}
+
+.box{
+	width:600px;
+	height: 300px;
+	border: dotted;
+	border-color: green;
+	border-width: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.spacecat, .spacedog{
+	width: 200px;
+	position: relative;
+}
+
+.spacecat{
+	top: -100px;
+	left: -100px;
+}
+
+.spacedog{
+	bottom: -200px;
+	right: -300px;
+}
+
+body{
+	background: url("outerspace_landscape.jpeg") no-repeat center center fixed;
+	background-size: cover;
+}
